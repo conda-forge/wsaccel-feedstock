@@ -11,6 +11,18 @@ Summary: WSAccell is WebSocket accelerator for AutobahnPython, and ws4py
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/wsaccel-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wsaccel-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/wsaccel-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/wsaccel-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/wsaccel-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/wsaccel-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wsaccel/badges/version.svg)](https://anaconda.org/conda-forge/wsaccel)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wsaccel/badges/downloads.svg)](https://anaconda.org/conda-forge/wsaccel)
+
 Installing wsaccel
 ==================
 
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/wsaccel-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wsaccel-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/wsaccel-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/wsaccel-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/wsaccel-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/wsaccel-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wsaccel/badges/version.svg)](https://anaconda.org/conda-forge/wsaccel)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wsaccel/badges/downloads.svg)](https://anaconda.org/conda-forge/wsaccel)
 
 
 Updating wsaccel-feedstock
