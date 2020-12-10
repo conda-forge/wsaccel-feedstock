@@ -1,6 +1,6 @@
 {% set name = "wsaccel" %}
-{% set version = "0.6.2" %}
-{% set sha256 = "425706acf0724d2f6bfa391ec37b4ef121d3432c956029de3cea4e101c218e0c" %}
+{% set version = "0.6.3" %}
+{% set sha256 = "fdb27866bb6b6e7a29e45222778ff97938782a0ce92eff07dfb20af8fb9301c4" %}
 
 package:
   name: {{ name|lower }}
@@ -12,9 +12,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1003
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-  skip: True  # [python_impl == "pypy"]
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  skip: true  # [python_impl == "pypy"]
 
 requirements:
   build:
@@ -39,8 +39,8 @@ about:
   license_family: Apache
   # License file is not included in MANIFEST.in in current release so adding copy to recipe.
   # The next release will include the license in the source.
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'WSAccell is WebSocket accelerator for AutobahnPython, and ws4py'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: WSAccell is WebSocket accelerator for AutobahnPython, and ws4py
   dev_url: https://github.com/methane/wsaccel
 
 extra:
