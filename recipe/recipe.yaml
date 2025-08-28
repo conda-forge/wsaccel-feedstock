@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: wsaccel
-  version: 0.6.6
+  version: 0.6.7
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 18efec0a7182587ba97102b4cd8df7b4f665f45d7ca36f19783f5f081ea114ea
+  sha256: aea79ba46b1a3792dbd1fe364aeb8a10128659c67057770c5c320d1f58588a8c
 
 build:
-  number: 2
+  number: 0
   skip: python_impl == "pypy"
   script: python -m pip install . -vv --no-build-isolation --no-deps
 
@@ -24,8 +24,8 @@ requirements:
   host:
     - python
     - pip
-    - setuptools
-    - cython
+    - setuptools >=77.0.2
+    - cython >=3.0.11,<3.1
   run:
     - python
 
