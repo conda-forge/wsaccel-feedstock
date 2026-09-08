@@ -13,7 +13,7 @@ source:
   sha256: aea79ba46b1a3792dbd1fe364aeb8a10128659c67057770c5c320d1f58588a8c
 
 build:
-  number: 0
+  number: 1
   skip: python_impl == "pypy"
   script: python -m pip install . -vv --no-build-isolation --no-deps
 
